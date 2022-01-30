@@ -1,0 +1,64 @@
+body {
+    font-family: serif;
+    font-size: large;
+    color: #183a3d;
+    background-color: #EFECCA;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    background-color: #E3C0D3;
+}
+
+nav
+{
+    text-align: center;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 70%;
+    font-weight: normal;
+    background-color: #E3C0D3;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3 {
+    font-family: Cambria, Cochin, Georgia, serif;
+    text-align: center;
+}
+
+.emphasized {
+    font-style: italic;
+    text-align: center;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+figure {
+    text-align: center;
+}
+
+.larger-font
+{
+    font-size: 150%;
+}
+
+.no-underline
+{
+    text-decoration: none;
+}
+
+.small-image {
+    width: 200px;
+    height: 300px;
+}
