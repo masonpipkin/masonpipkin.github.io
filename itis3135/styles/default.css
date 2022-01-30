@@ -48,6 +48,23 @@ figure {
     text-align: center;
 }
 
+table, th, td {
+
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+ol {
+    display: table;
+    margin: 0 auto;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .larger-font
 {
     font-size: 150%;
@@ -61,4 +78,25 @@ figure {
 .small-image {
     width: 200px;
     height: 300px;
+}
+
+th {
+    background-color: darkgrey;
+}
+tr {
+    background-color: #47b1bb;
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+input, label{
+    text-align: left;
 }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="styles/default.css" rel="stylesheet" type="text/css">
+	<title>Mason Pipkin - ITIS3135 Forms</title>
+</head>
+
+<body>
+	<header>
+		<h1>Mason Pipkin | ITIS3135 | Mango Penguin</h1>
+		<nav>
+			<a href="index.html">Home</a> 
+			||
+			<a href="introduction.html">Introduction</a> 
+			||
+			<a href="contract.html">Contract</a>
+			||
+			<a href="brand.html">UNCC Home</a>
+            ||
+            <a href="forms.html">Forms</a>
+            ||
+            <a href="tables.html">Tables</a>
+			
+		</nav>
+	</header>
+	
+	<main>
+        <h2>Activity #3 - HTML Form</h2>
+
+
+        <form action="#">
+            <div class="form">
+
+                <p>Input your information:</p>
+                
+                <label for="firstName">First name:</label>
+                <input type="text" id="firstName" name="fname" size="20" placeholder="First Name" required><br>
+                <label for="lastName">Last name:</label>
+                <input type="text" id="lastName" name="lname" size="20" placeholder="Last Name" required><br>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" size="15" placeholder="e.g. 999-999-9999" required><br>
+                <label for="email">Email address:</label>
+                <input type="text" id="email" name="email" size="30" placeholder="example@email.com" required><br>
+
+                <p>What is your favorite flavor of icecream:</p>
+
+                <input type="radio" id="vanilla" name="favoriteFlavor" value="vanilla">
+                <label for="vanila">vanilla</label><br>
+                <input type="radio" id="chocolate" name="favoriteFlavor" value="chocolate">
+                <label for="chocolate">chocolate</label><br>
+                <input type="radio" id="sbm" name="favoriteFlavor" value="sbm">
+                <label for="sbm">strawberry balsamic mason jar ice cream with black pepper</label><br>
+
+                <p>What toppings do you get on your icecream:</p>
+
+                <input type="checkbox" id="sprinkles" name="topping" value="sprinkles">
+                <label for="sprinkles">sprinkles</label><br>
+                <input type="checkbox" id="chocolateChips" name="topping" value="chocolate chips">
+                <label for="chocolateChips">chocolate chips</label><br>
+                <input type="checkbox" id="blackPepper" name="topping" value="black pepper">
+                <label for="blackPepper">black pepper</label><br>
+
+                <br>
+                <label for="fav_ide">Choose your favorite icecream cone:</label>
+                <select name="fav_ide" id="fav_ide">
+                    <option value="waffle cone">waffle cone</option>
+                    <option value="cake cone">cake cone</option>
+                    <option value="sugar cone">sugar cone</option>
+                    <option value="pretzel cone">pretzel cone</option>
+                </select>
+                <br><br>
+                <input class="button" type="submit" value="Submit">
+                <input class="button" type="reset" value="Reset">
+
+                
+            </div>
+        </form>
+		
+	
+	</main>
+	
+	<footer>
+		<br/>
+		<nav>
+		    <a href="http://webpages.uncc.edu/mpipkin3/" target="_blank">UNCC Webpage</a> 
+            ||
+            <a href="https://github.com/masonpipkin" target="_blank">Github</a> 
+            ||
+            <a href="https://masonpipkin.github.io/" target="_blank">Github.io</a>
+            ||
+            <a href="https://masonpipkin.github.io/itis3135/" target="_blank">ITIS 3135 Github Page</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/pipkinmason" target="_blank">Codecademy</a>
+            ||
+            <a href="https://www.freecodecamp.org/mpipkin3/" target="_blank">freeCodeCamp</a>
+            ||
+            <a href="https://jsfiddle.net/user/masonpipkin/" target="_blank">JSFiddle</a>
+            ||
+            <a href="https://www.linkedin.com/in/mason-pipkin-594b2a17a/" target="_blank">LinkedIn</a>
+		</nav>
+		<br />
+		Created by Pipkin Design LLC. &copy;2022.
+
+		<p>
+            <a class="no-underline" href="https://validator.w3.org/check?uri=referer" target="_blank">
+                <img src="images/button_validation_html5.png" width="90" height="30" alt="Link to HTML validator">
+            </a>
+
+            <a class="no-underline" href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <img src="images/button_validation_css.png" width="90" height="30" alt="Link to CSS validator">
+            </a>
+		</p>
+	
+	</footer>
+
+</body>
+
+</html>
