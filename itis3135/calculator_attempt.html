@@ -10,8 +10,17 @@
 	<div data-include="components/header.html"></div>
 	
 	<main>
-        
-        
+		<h2>Calculator Attempt</h2>
+		<div class="form">
+			<input type = "text" id="firstnum" name="firstnum" placeholder="First Number">
+			<input type = "text" id="secondnum" name="secondnum" placeholder="Second Number">
+			<input class="button" type="button" onclick="add();" value="Add">
+			<input class="button" type="button" onclick="subtract();" value="Subtract">
+			<input class="button" type="button" onclick="multiply();" value="Multiply">
+			<input class="button" type="button" onclick="divide();" value="Divide">
+			<br>
+			<p id="output"></p>
+		</div>
 	</main>
 	
 	<div data-include="components/footer.html"></div>
