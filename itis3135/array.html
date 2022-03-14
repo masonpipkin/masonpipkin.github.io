@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="styles/default.css" rel="stylesheet" type="text/css" >
+	<title>Mason Pipkin - ITIS3135 Arrays</title>
+</head>
+
+<body>
+	<div data-include="components/header.html"></div>
+	
+	<main>
+        <h2>Arrays</h2>
+        <div class="form">
+            <label for="employee_name">Employee</label>
+                <select name="employee_name" id="employee_name">
+                    <option>User 1</option>
+                    <option>User 2</option>
+                    <option>User 3</option>
+                </select>
+            <br>    
+            <label for="salary">Salary: </label>
+            <input type="number" id="salary" placeholder="Input Salary Here" required>*
+            <br>    
+            <input type="button" id="add" value="Add Salary">
+            <input type="button" id="display_results" value="Display Results">
+            <input type="button" id="display_salary" value="Display Salary">
+            <br>
+            <div id="results"></div>
+            <br>
+            <div id="results_table"></div>
+        </div>
+	</main>
+	
+	<div data-include="components/footer.html"></div>
+    <script src="scripts/htmlinclude.js"></script>
+    <script src="scripts/arrays.js"></script>
+</body>
+
+</html>
