@@ -6,20 +6,54 @@
 	<title>Mason Pipkin - ITIS3135 Slideshow</title>
     <script src="scripts/jquery-3.6.0.js"></script>
     <script src="scripts/slideshow.js"></script>
+    <style>
+        .container {
+            position: relative;
+            width: 540px;
+            margin: 40px auto;
+            overflow: auto;
+        }
+        .slide-inner {
+            width: 600px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+        }
+
+        .slide-inner img {
+            display: none;
+            width: 600px;
+            height: 400px;
+        }
+
+        .slide-inner img.current {
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
 	<div data-include="components/header.html"></div>
-	
 	<main>
-        <button class="prev" alt="Prev">prev</button>
-        <div class = "slideshow">
-            <img src="images/penguin-1.png" class = "active">
-            <img src="images/penguin-2.jpeg">
-            <img src="images/penguin-3.jpeg">
-            <img src="images/penguin-4.jpeg">
+        <h2>pengin</h2>
+        
+        
+        <div class="container">
+                <div class="slide-inner">
+                    <img src="images/penguin-1.jpeg" alt="Penguin pic 0" class="current">
+                    <img src="images/penguin-2.jpeg" alt="Penguin pic 1">
+                    <img src="images/penguin-3.jpeg" alt="Penguin pic 2">
+                    <img src="images/penguin-4.jpeg" alt="Penguin pic 3">
+                    <img src="images/penguin-5.jpeg" alt="Penguin pic 4">
+                    <img src="images/penguin-6.jpeg" alt="Penguin pic 5">
+                </div>
+                <div class="buttons">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
         </div>
-        <button class="next" alt="Next">next</button>
+        
 	</main>
 	
 	<div data-include="components/footer.html"></div>
