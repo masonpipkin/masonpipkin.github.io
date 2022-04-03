@@ -153,6 +153,7 @@ table {
 
 .navbar a:hover {
     color: #4CB5AE;
+    text-decoration: none;
 }
 
 a {
