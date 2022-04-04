@@ -318,3 +318,7 @@ li {
     margin-right: 1%;
     margin-left: 1%;
 }
+
+.nonGridTopMargin {
+    margin-top: 6.5%;
+}
