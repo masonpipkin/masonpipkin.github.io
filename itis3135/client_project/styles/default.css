@@ -184,6 +184,7 @@ a:hover {
 }
 
 .articleCard {
+    width: 200px;
     text-align: center;
     margin-top: 5%;
 }
@@ -270,6 +271,7 @@ h3 {
 }
 
 p {
+    font-family: 'Roboto', sans-serif;
     color: #AEA3B0;
     text-align: center;
     margin-top: 15px;
@@ -277,12 +279,14 @@ p {
 }
 
 ul {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 15px;
     align-content: center;
 }
 
 li {
+    font-family: 'Roboto', sans-serif;
     color: #4CB5AE;
 }
 
