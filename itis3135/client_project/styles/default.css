@@ -165,18 +165,6 @@ a:hover {
     text-decoration: underline;
 }
 
-nav {
-    text-align: center;
-}
-
-footer {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 70%;
-    font-weight: normal;
-    background-color: #000022;
-}
-
 .circle-image {
     margin-top: 22%;
     border-radius: 50%;
@@ -261,6 +249,14 @@ footer {
     grid-area: contentbottom;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #AEA3B0;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
 h2 {
     color: #000022;
     margin-top: 20px;
@@ -282,12 +278,13 @@ h3 {
     font-size: medium;
 }
 
-p {
+.oops {
     font-family: 'Roboto', sans-serif;
     color: #AEA3B0;
     text-align: center;
     margin-top: 15px;
     line-height: 1.5;
+    font-size: 1.5em;
 }
 
 ul {
@@ -309,6 +306,11 @@ li {
 .narrowMargin {
     margin-left: 100px;
     margin-right: 100px;
+}
+
+.extraNarrowMargin {
+    margin-left: 400px;
+    margin-right: 400px;
 }
 
 .smallMarginTop {
