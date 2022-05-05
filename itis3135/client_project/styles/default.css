@@ -165,14 +165,16 @@ a:hover {
     text-decoration: underline;
 }
 
+nav {
+    text-align: center;
+}
+
 footer {
-    overflow: hidden;
-    background-color: #000022;
-    margin: 0;
-    top: 0;
-    width: 100%;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-size: 70%;
+    font-weight: normal;
+    background-color: #000022;
 }
 
 .circle-image {
@@ -307,11 +309,6 @@ li {
 .narrowMargin {
     margin-left: 100px;
     margin-right: 100px;
-}
-
-.extraNarrowMargin {
-    margin-left: 400px;
-    margin-right: 400px;
 }
 
 .smallMarginTop {
