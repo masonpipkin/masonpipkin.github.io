@@ -72,15 +72,7 @@
 
     <main>
 
-        <div class="navbar">
-            <a href="#page1">Home</a>
-            <a href="#page2">Skills/Education</a>
-            <a href="#page3">Projects</a>
-            <a href="#page4">Publications</a>
-            <a href="#page5">Contact</a>
-        </div>
-
-
+        <div data-include="components/header.html"></div>
 
         <div id="pagepiling">
             <div class="section" id="section1">
@@ -198,13 +190,7 @@
             </div>
 
             <div class="section" id="section5">
-                <h1>Contact Me Here!</h1><br>
-                <form action="#">
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="text" placeholder="Email address" name="mail" required>
-                    <textarea id="details" name="details" placeholder="Additional notes..." style="height:200px" required></textarea>
-                    <input type="submit" value="Send Message">
-                </form>
+                <div data-include="components/contact.html"></div>
             </div>
         </div>
 
