@@ -3,24 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>AprilSong</title>
+    <title>April Song</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 
-
-    <!--zoom-->
-    <link rel="stylesheet" href="styles/magnific-popup.css">
-    <script src="scripts/jquery.magnific-popup.js"></script>
-
-
-    <!--pagepiling-->
+    <!--pagepiling plugin-->
     <link rel="stylesheet" type="text/css" href="styles/jquery.pagepiling.css" />
     <script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
 
+    <!--zoom plugin-->
+    <link rel="stylesheet" href="styles/magnific-popup.css">
+    <script src="scripts/jquery.magnific-popup.js"></script>
+
+    <!--tooltip widget-->
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
     <link href="styles/default.css" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript">
+    <script>
         $(document).ready(function() {
             /*
              * Plugin intialization
@@ -41,7 +42,6 @@
                 }
             });
 
-
             /*
              * Internal use of the demo website
              */
@@ -55,18 +55,8 @@
                 $('#examplesList').hide();
             });
         });
-        $(document).ready(function() {
-            $('.articleContainer').magnificPopup({
-                delegate: '.article', // child items selector, by clicking on it popup will open
-                type: 'image',
-                titleSrc: 'title',
-                // other options
-            });
-        });
     </script>
 </head>
-
-
 
 <body>
 
@@ -76,127 +66,26 @@
 
         <div id="pagepiling">
             <div class="section" id="section1">
-
-                <div class="container">
-                    <div class="itemLeft">
-                        <img src="https://www.terry.uga.edu/sites/default/files/styles/square_400x400/public/media/images/20211015_MIST_008_0.jpg?h=b2c12436&itok=mR8XVWTE" class="circle-image" alt="April Song Headshot">
-                        <h2>Yuanyuan (April) Song</h2><br><br>
-                        <ul>
-                            <li>
-                                <a href="https://www.linkedin.com/in/yuanyuan-song-63a9a6211/" target="_blank">LinkedIn</a>
-                            </li><br>
-
-                            <li>
-                                <a href="https://t-rex-graph.org" target="_blank">T-Rex</a>
-                            </li><br>
-
-                            <li>
-                                <a href="https://scholar.google.com/citations?user=Flf8ILwAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                    <div class="itemRight">
-                        <div class="itemTop mediumMarginTop">
-                            <h1>About Me</h1>
-                            <p class="center narrowMargin">
-                                I am currently a third-year PhD Candidate of Management Information Systems at the University of Georgia, Terry College of Business. I have been working on Theory Research Exchange (T-Rex) project, which focuses on advancing literature review and knowledge
-                                analytics. T-Rex proposes to digitize core knowledge in publications, which facilitates developing and applying methods for processing graphical representations of causal and process models to advance theoretical research.
-                                I use a variety of methods including network science, graph theory, and natural language processing. I have defended my dissertation proposal and my dissertation chair is Dr. Rick Watson, who oversees the T-Rex project
-                                together with Drs. Xia Zhao and Jane Webster.
-                            </p>
-                        </div>
-                        <div class="itemBottom">
-                            <h1 class="noMargin">Interests</h1>
-                            <p class="center narrowMargin">
-                                Literature Review, Knowledge Analytics, Network Science, Graph Theory<br> Hiking, Tennis, Swimming, Lego
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
+                <div data-include="components/home.html"></div>
             </div>
             <div class="section" id="section2">
-                <div class="container2">
-                    <div class="contenttop">
-                        <h1 class="smallMarginTop narrowMargin">Skills</h1>
-                        <p class="narrowMargin">
-                            Social Network Analysis<br> Graph Theory<br> Natural Language Processing (Topic Modeling and Sentiment Analysis)<br> Structural Equation Modeling<br> Applied Econometrics<br>
-
-                        </p>
-                    </div>
-                    <div class="contentbottom">
-                        <h1 class="smallMarginTop narrowMargin">Education</h1>
-                        <div class="uni noSideMargin">
-                            <p class="noSideMargin">
-                                B.S. Ocean University of China, China<br> 2013-2017
-                            </p>
-                            <p class="noSideMargin">
-                                M.S. Harbin Institute of Technology, China<br> Major: Management information systems<br> 2017-2019
-                            </p>
-                            <p class="noSideMargin">
-                                Ph.D. University of Georgia, USA<br> Advisors: Drs. Rick Watson &amp; Xia Zhao<br> 2019-present
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <div data-include="components/education.html"></div>
             </div>
             <div class="section" id="section3">
-                <h1 class="smallMarginTop">T-Rex</h1>
-                <p class="oops extraNarrowMargin">T-Rex (Theory Research Exchange) aims to improve the process of literature reviewing and knowledge synthesis. T-Rex supports digitally encoding publications' core knowledge contributions and ancillary data via a labeled property graph
-                    database. Encoding knowledge into a graph database brings new opportunities to manage and analyze knowledge. There is an application to facilitate the coding process - Codasaurus. Codasaurus automatically generates Cypher code for
-                    a graph version of a publication with information input by a researcher. Analysaurus is under development to support querying and analytics.
-                </p>
+                <div data-include="components/projects.html"></div>
             </div>
             <div class="section" id="section4">
-                <h1 class="narrowMargin smallMarginTop">Publications</h1>
-                <div class="articleContainer">
-                    <div class="articleCard">
-                        <a href="images/RevisedManuscriptPage-1.jpg" title="A Causal Model Analysis Approach to Literature Reviewing: A Tutorial on the Application of Graph Theory" class="article">
-                            <img src="images/RevisedManuscriptPage-1.jpg" alt="." class="articlePreview">
-                        </a>
-                        <a href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1002&context=treos_icis2020" target="_blank">
-                            View Full Article
-                        </a>
-                    </div>
-                    <div class="articleCard">
-                        <a href="images/Online_Health_Community.jpg" title="Exploring the role of online health community information in patients' decisions to switch from online to offline medical services" class="article">
-                            <img src="images/Online_Health_Community.jpg" alt="." class="articlePreview">
-                        </a>
-                        <a href="https://www.linkedin.com/in/yuanyuan-song-63a9a6211/" target="_blank">
-                            View Full Article
-                        </a>
-                    </div>
-                    <div class="articleCard">
-                        <a href="images/T-rex.jpg" title="Literature Reviewing: Addressing the Jingle and Jangle Fallacies and Jungle Conundrum Using Graph Theory and NLP" class="article">
-                            <img src="images/T-rex.jpg" alt="." class="articlePreview">
-                        </a>
-                        <a href="https://www.linkedin.com/in/yuanyuan-song-63a9a6211/" target="_blank">
-                            View Full Article
-                        </a>
-                    </div>
-                    <div class="articleCard">
-                        <a href="images/Theory_Research_Exchange.jpg" title="Theory Research Exchange: A Causal Model Approach to Literature Reviewing" class="article">
-                            <img src="images/Theory_Research_Exchange.jpg" alt="." class="articlePreview" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/yuanyuan-song-63a9a6211/" target="_blank">
-                            View Full Article
-                        </a>
-
-                    </div>
-                </div>
+                <div data-include="components/publications.html"></div>
             </div>
-
             <div class="section" id="section5">
                 <div data-include="components/contact.html"></div>
             </div>
         </div>
 
-
     </main>
+    <div data-include="components/footer.html"></div>
     <script src="scripts/htmlinclude.js"></script>
+
 </body>
 
 
