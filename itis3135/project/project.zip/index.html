@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>April Song</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+    <!--pagepiling plugin-->
+    <link rel="stylesheet" type="text/css" href="styles/jquery.pagepiling.css" />
+    <script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
+
+    <!--zoom plugin-->
+    <link rel="stylesheet" href="styles/magnific-popup.css">
+    <script src="scripts/jquery.magnific-popup.js"></script>
+
+    <!--tooltip widget-->
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
+
+    <script>
+        $(document).ready(function() {
+            /*
+             * Plugin intialization
+             */
+            $('#pagepiling').pagepiling({
+                menu: '#menu',
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+                sectionsColor: ['white', 'white', 'white', 'white', 'white'],
+                afterRender: function() {
+                    $('#pp-nav').addClass('custom');
+                },
+                afterLoad: function(anchorLink, index) {
+                    if (index > 1) {
+                        $('#pp-nav').removeClass('custom');
+                    } else {
+                        $('#pp-nav').addClass('custom');
+                    }
+                }
+            });
+
+            /*
+             * Internal use of the demo website
+             */
+            $('#showExamples').click(function(e) {
+                e.stopPropagation();
+                e.preventDefault();
+                $('#examplesList').toggle();
+            });
+
+            $('html').click(function() {
+                $('#examplesList').hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <main>
+
+        <div data-include="components/header.html"></div>
+
+        <div id="pagepiling">
+            <div class="section" id="section1">
+                <div data-include="components/home.html"></div>
+            </div>
+            <div class="section" id="section2">
+                <div data-include="components/education.html"></div>
+            </div>
+            <div class="section" id="section3">
+                <div data-include="components/projects.html"></div>
+            </div>
+            <div class="section" id="section4">
+                <div data-include="components/publications.html"></div>
+            </div>
+            <div class="section" id="section5">
+                <div data-include="components/contact.html"></div>
+            </div>
+        </div>
+
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/htmlinclude.js"></script>
+
+</body>
+
+
+</html>
